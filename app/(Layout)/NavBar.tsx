@@ -11,7 +11,7 @@ const NavBar = () => {
                     href="/">Yanfaa</Link>
                 <div className="hidden md:flex items-center gap-6">
                     <Link className="text-[#003366] dark:text-blue-400 font-bold border-b-2 border-[#003366] pb-1"
-                        href="#">Courses</Link>
+                        href="/Course">Course</Link>
                     <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
                         href="#">Mentors</Link>
                     <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
