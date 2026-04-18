@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const NavBar = () => {
@@ -26,11 +27,11 @@ const NavBar = () => {
                     <span
                         className="material-symbols-outlined text-slate-600 cursor-pointer hover:bg-slate-100/50 p-2 rounded-full transition-all">shopping_cart</span>
                 </div>
-                <button
-                    className="px-5 py-2 text-sm font-semibold text-[#003366] hover:bg-slate-100/50 rounded-full transition-all">Login</button>
-                <button
+                <Link href="/Login"
+                    className="px-5 py-2 text-sm font-semibold text-[#003366] hover:bg-slate-100/50 rounded-full transition-all">Login</Link>
+                <Link href={"/Registeration"}
                     className="px-6 py-2.5 bg-[#003366] text-white text-sm font-bold rounded-full hover:shadow-lg active:scale-95 transition-all">Get
-                    Started</button>
+                    Started</Link >
             </div>
         </div>
     </nav>
