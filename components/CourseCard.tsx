@@ -1,10 +1,40 @@
+"use client"
 import React from 'react'
+import { Menubar, MenubarCheckboxItem, MenubarContent, MenubarItem, MenubarMenu, MenubarSeparator, MenubarShortcut, MenubarTrigger } from './ui/menubar'
 
 const CourseCard = () => {
     return (
         <>
             <div
-                className="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-[0px_12px_32px_rgba(0,51,102,0.06)] transition-all duration-500">
+                className="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-[0px_12px_32px_rgba(0,51,102,0.06)] transition-all duration-500 relative">
+
+                {/* Three Dots Icon - Top Right */}
+                <div className="absolute top-4 right-4 z-10">
+                    <Menubar className="border-none bg-transparent p-0">
+                        <MenubarMenu>
+                            <MenubarTrigger className="p-0">
+                                <div
+                                    className="w-8 h-8 rounded-full bg-white/90 hover:bg-white shadow-md flex items-center justify-center transition-all hover:scale-110 cursor-pointer"
+                                >
+                                    <span className="material-symbols-outlined text-gray-700">more_vert</span>
+                                </div>
+                            </MenubarTrigger>
+                            <MenubarContent 
+                                className="w-64"
+                                align="end"  // Aligns to the right edge
+                                sideOffset={5}  // Adds small gap
+                            >
+                                <MenubarCheckboxItem>Enroll in Course</MenubarCheckboxItem>
+                                <MenubarSeparator />
+                                <MenubarItem>View Details</MenubarItem>
+                                <MenubarItem>Share Course</MenubarItem>
+                                <MenubarSeparator />
+                                <MenubarItem className="text-red-600">Report</MenubarItem>
+                            </MenubarContent>
+                        </MenubarMenu>
+                    </Menubar>
+                </div>
+
                 <div className="aspect-[16/9] overflow-hidden">
                     <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         data-alt="Close up of digital marketing analytics on tablet with vibrant charts and graphs in a bright modern office"
@@ -26,7 +56,7 @@ const CourseCard = () => {
                         </div>
                         <div className="flex items-center gap-1 text-on-surface-variant text-sm">
                             <span className="material-symbols-outlined text-sm text-yellow-500"
-                                style={{fontVariationSettings: "FILL 1"}}>star</span>
+                                style={{ fontVariationSettings: "FILL 1" }}>star</span>
                             4.8 (1.5k)
                         </div>
                     </div>

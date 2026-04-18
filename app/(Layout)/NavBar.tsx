@@ -17,7 +17,7 @@ const NavBar = () => {
                     <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
                         href="#">Learning Paths</Link>
                     <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
-                        href="#">Enterprise</Link>
+                        href="/Student">Student</Link>
                 </div>
             </div>
             <div className="flex items-center gap-4">
