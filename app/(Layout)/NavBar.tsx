@@ -7,17 +7,17 @@ const NavBar = () => {
         className="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-[20px] shadow-[0px_12px_32px_rgba(0,51,102,0.06)]">
         <div className="flex items-center justify-between px-8 py-4 max-w-screen-2xl mx-auto">
             <div className="flex items-center gap-8">
-                <a className="text-2xl font-extrabold tracking-tighter text-[#003366] dark:text-blue-500"
-                    href="#">Yanfaa</a>
+                <Link className="text-2xl font-extrabold tracking-tighter text-[#003366] dark:text-blue-500"
+                    href="/">Yanfaa</Link>
                 <div className="hidden md:flex items-center gap-6">
-                    <a className="text-[#003366] dark:text-blue-400 font-bold border-b-2 border-[#003366] pb-1"
-                        href="#">Courses</a>
-                    <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
-                        href="#">Mentors</a>
-                    <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
-                        href="#">Learning Paths</a>
-                    <a className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
-                        href="#">Enterprise</a>
+                    <Link className="text-[#003366] dark:text-blue-400 font-bold border-b-2 border-[#003366] pb-1"
+                        href="#">Courses</Link>
+                    <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
+                        href="#">Mentors</Link>
+                    <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
+                        href="#">Learning Paths</Link>
+                    <Link className="text-slate-600 dark:text-slate-400 font-medium hover:text-[#003366] transition-all duration-300"
+                        href="#">Enterprise</Link>
                 </div>
             </div>
             <div className="flex items-center gap-4">
