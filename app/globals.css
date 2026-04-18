@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom Colors */
+  --color-primary: #001e40;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #003366;
+  --color-on-primary-container: #799dd6;
+  --color-secondary: #4a607d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #4a607e;
+  --color-on-secondary-container: #ffffff;
+  --color-tertiary: #281c00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #433000;
+  --color-on-tertiary-container: #c19523;
+  --color-surface: #f9f9fe;
+  --color-on-surface: #1a1c1f;
+  --color-surface-variant: #e2e2e7;
+  --color-on-surface-variant: #43474f;
+  --color-outline: #737780;
+  --color-outline-variant: #c3c6d1;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-background: #f9f9fe;
+  --color-on-background: #1a1c1f;
+  --color-inverse-surface: #2f3034;
+  --color-inverse-on-surface: #f1f0f5;
+  
+  /* Border Radius */
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+  
+  /* Font Family */
+  --font-family-sans: 'Manrope', sans-serif;
+}
+
+/* Custom styles */
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--color-background);
+  color: var(--color-on-background);
+}
+
+/* Custom utility for Material Icons */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
